@@ -1,0 +1,12 @@
+name: samplesizecal
+title: samplesizecal
+username:
+account: wqliang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3497155
+bundleId: 4167859
+url: https://wqliang.shinyapps.io/samplesizecal/
+when: 1612199808.01359
+asMultiple: FALSE
+asStatic: FALSE

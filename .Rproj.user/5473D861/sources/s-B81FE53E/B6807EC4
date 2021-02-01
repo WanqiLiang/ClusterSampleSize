@@ -1,0 +1,24 @@
+{
+    "id": "B6807EC4",
+    "path": "C:/Users/wenki/src/sample_size/global.R",
+    "project_path": "global.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1611167938858.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "115,1",
+        "scrollLine": "0"
+    },
+    "folds": "4|95|59|0|\n62|110|115|0|\n",
+    "lastKnownWriteTime": 1612199287,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1612199574075,
+    "read_only": false,
+    "read_only_alternatives": []
+}
