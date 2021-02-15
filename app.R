@@ -13,9 +13,9 @@ source("global.R")
 # Define UI for application that draws a histogram
 ui <- navbarPage(
   theme = shinytheme("united"),
-  title = "Sample size calculator",
+  title = "Cluster-level Sample size calculator",
   id = "tabs",
-  tabPanel(title = "ADEPT Design", value = "ADEPT", 
+  tabPanel(title = "Design I", value = "ADEPT", 
            
            
            useShinydashboard(),
@@ -61,9 +61,12 @@ ui <- navbarPage(
                     textOutput("result")
              ),
              column(width = 8,
-                    h2("Sample size calculator for ADEPT design"),
-                    img(src='schema.png', align = "center",height="80%", width="80%"),
-                    
+                    h2("Sample size calculator for design I"),
+                    img(src='ADEPT_Design.gif', align = "center",height="80%", width="80%"),
+                    h3('Method'),
+                    p('Sample size is computed according to the methods presented in Necamp et al. (2017)'),
+                    p('The application is run on', a(href="https://www.r-project.org/", "R"),'version 4.0.3, and written using ',a(href="https://shiny.rstudio.com/", "Shiny"),', an open-source web application framework for R produced by RStudio.'),
+                    p(strong("Citation"),'NeCamp, T., Kilbourne, A., &amp; Almirall, D. (2017). Comparing cluster-level dynamic treatment regimens using sequential, multiple assignment, randomized trials: Regression estimation and sample size considerations. Statistical Methods in Medical Research, 26(4), 1572-1589. doi:10.1177/0962280217708654')
              )
            )
            
@@ -74,7 +77,7 @@ ui <- navbarPage(
   ),
   
 
-  tabPanel(title ="Prototypical Design", value = "prototypical", 
+  tabPanel(title ="Design II ", value = "prototypical", 
            
            
            useShinydashboard(),
@@ -121,8 +124,12 @@ ui <- navbarPage(
                     textOutput("result2")
              ),
              column(width = 8, 
-                    h2("Sample size calculator for prototypical SMART design"),
-                    img(src='prototypical_SMART_design.png', align = "center",height="80%", width="80%"),
+                    h2("Sample size calculator for design II"),
+                    img(src='protot.gif', align = "center",height="80%", width="80%"),
+                    h3('Method'),
+                    p('Sample size is computed according to the methods presented in Necamp et al. (2017)'),
+                    p('The application is run on', a(href="https://www.r-project.org/", "R"),'version 4.0.3, and written using ',a(href="https://shiny.rstudio.com/", "Shiny"),', an open-source web application framework for R produced by RStudio.'),
+                    p(strong("Citation"),'NeCamp, T., Kilbourne, A., &amp; Almirall, D. (2017). Comparing cluster-level dynamic treatment regimens using sequential, multiple assignment, randomized trials: Regression estimation and sample size considerations. Statistical Methods in Medical Research, 26(4), 1572-1589. doi:10.1177/0962280217708654')
              )
            )
   ),
